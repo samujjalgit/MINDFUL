@@ -3,7 +3,7 @@
 MINDFUL is our vision for Google Sollution Challenge 2024
 
 
-Welcome to our Mental Well-being Application repository! This application aims to provide a comprehensive platform for users to enhance their mental health and well-being through innovative features and technologies.
+Welcome to MINDFUL. Our Mental Well-being Application Repository! This application aims to provide a comprehensive platform for users to connect to people suffering from similar mental stress and everyone comes together to gain well-being through innovative features and technologies.
 
 
 ## **Features**
