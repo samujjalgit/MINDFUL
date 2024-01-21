@@ -1,8 +1,8 @@
 ![MINDFUL](images/Mindful-Product-catalog-showcase.png)
 # MINDFUL
 MINDFUL is our vision for Google Sollution Challenge 2024
-Mental Well-being Application
-Overview
+
+
 Welcome to our Mental Well-being Application repository! This application aims to provide a comprehensive platform for users to enhance their mental health and well-being through innovative features and technologies.
 
 
