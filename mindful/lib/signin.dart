@@ -57,7 +57,7 @@ class _SignInState extends State<SignIn> {
         height: 50,
         child: SignInButton(
           Buttons.google,
-          text: 'Sign up with Google',
+          text: 'Sign in with google',
           onPressed: _handleGoogleSignIn,
         ),
       ),
@@ -97,8 +97,8 @@ class _SignInState extends State<SignIn> {
                   OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
             ),
           ),
-          const Spacer(flex: 1),
-
+          // const Spacer(flex: 1),
+          const SizedBox(height: 50),
           ElevatedButton(
             onPressed: () {
               // setState(() {

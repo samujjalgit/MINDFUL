@@ -58,7 +58,7 @@ class _HelloScreenState extends State<HelloScreen> {
             padding: const EdgeInsets.symmetric(vertical: 20.0),
             child: CarouselSlider(
               items: [
-                'Focus',
+                'Focus', //image will be added accordingly
                 'Talk',
                 'MHT',
                 'Meditation',
@@ -80,6 +80,8 @@ class _HelloScreenState extends State<HelloScreen> {
                         decoration: BoxDecoration(
                           color: Colors.deepPurple[200],
                           borderRadius: BorderRadius.circular(10.0),
+                          // image: DecorationImage(
+                          //     image: AssetImage(name), fit: BoxFit.fill),
                         ),
                         child: Center(
                           child: Text(
