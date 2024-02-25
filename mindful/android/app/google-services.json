@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "430221700265",
+    "project_id": "mindful-9670c",
+    "storage_bucket": "mindful-9670c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430221700265:android:636d3eb7f606ca4c384db8",
+        "android_client_info": {
+          "package_name": "com.example.mindful"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "430221700265-7ij6k5qv2cpg6ijbmqa65m1gmunbbmhc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQsqt7H2jmfHvgJVd9wIzqNK8TGZ74jQ4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "430221700265-7ij6k5qv2cpg6ijbmqa65m1gmunbbmhc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "430221700265-b72qqtciu8fon7j7jm7fk2f8j3eeu2hf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.mindful"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
