@@ -12,6 +12,9 @@ class SignIn extends StatefulWidget {
 
 class _SignInState extends State<SignIn> {
   final FirebaseAuth _auth = FirebaseAuth.instance;
+  //create a textedit controller for username input
+  TextEditingController nameController = TextEditingController();
+  String userName = '';
 
   User? _user;
 
@@ -83,9 +86,24 @@ class _SignInState extends State<SignIn> {
             _user!.displayName ?? "",
             // style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
           ),
+          const SizedBox(height: 20),
+
+          //code to input the user's name
+          TextField(
+            controller: nameController,
+            decoration: InputDecoration(
+              labelText: 'Enter your name',
+              border:
+                  OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
+            ),
+          ),
           const Spacer(flex: 1),
+
           ElevatedButton(
             onPressed: () {
+              // setState(() {
+              //   userName = nameController.text;
+              // });
               Navigator.of(context).push(
                 MaterialPageRoute(
                   builder: (BuildContext context) {
@@ -101,10 +119,17 @@ class _SignInState extends State<SignIn> {
             ),
             child: const Text("Next"),
           ),
+          const SizedBox(height: 10),
           MaterialButton(
-            color: Color.fromARGB(255, 255, 172, 70),
-            child: const Text("Sign Out"),
+            color: Colors.orange[50],
             onPressed: _auth.signOut,
+            height: 50,
+            minWidth: 200,
+            shape:
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
+            child: const Text(
+              "Sign Out",
+            ),
           ),
           const SizedBox(height: 50),
         ],

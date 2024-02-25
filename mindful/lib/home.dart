@@ -4,6 +4,7 @@ import 'package:mindful/profile.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:mindful/settings.dart';
 import 'package:mindful/talkbot.dart';
+import 'package:mindful/signin.dart';
 
 class HelloScreen extends StatefulWidget {
   const HelloScreen({super.key});
@@ -16,6 +17,7 @@ class HelloScreen extends StatefulWidget {
 class _HelloScreenState extends State<HelloScreen> {
   int _selectedIndex = 0;
   final FirebaseAuth auth = FirebaseAuth.instance;
+
   @override
   Widget build(BuildContext context) {
     final user = FirebaseAuth.instance.currentUser;
