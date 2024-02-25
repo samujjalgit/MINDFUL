@@ -87,23 +87,26 @@ class _SignInState extends State<SignIn> {
             // style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
           ),
           const SizedBox(height: 20),
-
           //code to input the user's name
-          TextField(
-            controller: nameController,
-            decoration: InputDecoration(
-              labelText: 'Enter your name',
-              border:
-                  OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
+          Container(
+            width: 300,
+            child: TextField(
+              controller: nameController,
+              decoration: InputDecoration(
+                labelText: 'Enter your name',
+                contentPadding: EdgeInsets.symmetric(horizontal: 20),
+                border:
+                    OutlineInputBorder(borderRadius: BorderRadius.circular(30)),
+              ),
             ),
           ),
           // const Spacer(flex: 1),
           const SizedBox(height: 50),
           ElevatedButton(
             onPressed: () {
-              // setState(() {
-              //   userName = nameController.text;
-              // });
+              setState(() {
+                userName = nameController.text;
+              });
               Navigator.of(context).push(
                 MaterialPageRoute(
                   builder: (BuildContext context) {
@@ -131,7 +134,7 @@ class _SignInState extends State<SignIn> {
               "Sign Out",
             ),
           ),
-          const SizedBox(height: 50),
+          const SizedBox(height: 20),
         ],
       ),
     );

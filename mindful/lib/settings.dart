@@ -45,8 +45,8 @@ class _SettingsPageState extends State<settingsPage> {
             },
           ),
           ListTile(
-            leading: const Icon(Icons.feedback),
-            title: const Text('Feedback'),
+            leading: const Icon(Icons.bug_report),
+            title: const Text('Report a bug'),
             onTap: () {},
           ),
           ListTile(

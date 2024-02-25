@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:mindful/community.dart';
 import 'package:mindful/profile.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:mindful/settings.dart';
@@ -58,7 +59,7 @@ class _HelloScreenState extends State<HelloScreen> {
             padding: const EdgeInsets.symmetric(vertical: 20.0),
             child: CarouselSlider(
               items: [
-                'Focus', //image will be added accordingly
+                'Focus',
                 'Talk',
                 'MHT',
                 'Meditation',
@@ -196,6 +197,9 @@ class _HelloScreenState extends State<HelloScreen> {
             } else if (index == 2) {
               Navigator.push(context,
                   MaterialPageRoute(builder: (context) => settingsPage()));
+            } else if (index == 1) {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => GroupPage()));
             }
           }),
     );
